@@ -1,0 +1,34 @@
+L = []
+for x in range(5):
+    L.append(x**2)
+L
+#[0, 1, 4, 9, 16]
+
+#alternative way of above 
+L1 = [x**2 for x in range(5)]
+L1
+#[0, 1, 4, 9, 16]
+
+L2 = [x*3 for x in 'red']
+L2
+#['rrr', 'eee', 'ddd']
+
+# Convert list items to absolute values using abs()
+value =[-4,-3,2,8,-1]
+
+L3 = [abs(x) for x in value]
+print(L3)
+
+colors = ['red ',' blue  ','  green']
+L4 = [color.strip() for color in colors]
+print(L4)
+
+#creates a list of (number, square) tuples
+L5 =[(x, x**2) for x in range(4)]
+L5
+#[(0, 0), (1, 1), (2, 4), (3, 9)]
+
+## Filter list to exclude negative numbers
+Val = [-4,3,-2,-5,6,8]
+L6 = [x for x in Val if x >= 0]
+print(L6)
